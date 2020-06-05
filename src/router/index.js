@@ -27,7 +27,9 @@ VueRouter.prototype.push = function push(location) {
     component: () => import('@/views/Home/Home.vue'),
     children:[
       {path : '/welcome',component: () => import('@/components/Welcome/Welcome.vue')},
-      {path : '/users',component: () => import('@/components/User/Users.vue')}
+      {path : '/users',component: () => import('@/components/User/Users.vue')},
+      {path : '/rights',component: () => import('@/components/Power/Rights.vue')},
+      {path : '/roles',component: () => import('@/components/Power/Roles.vue')}
     ]
   }
 ]
