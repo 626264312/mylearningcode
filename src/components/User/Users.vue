@@ -164,7 +164,7 @@ export default {
       }
     };
     return {
-      //获取用户列表的参数对象
+      //查询条件
       queryInfo: {
         query: "",
         // 当前的页数

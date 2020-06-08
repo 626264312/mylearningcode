@@ -5,6 +5,7 @@ import store from './store'
 import ElementUI, { Message, MessageBox } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/assets/css/global.css'
+import TreeTable from 'vue-table-with-tree-grid'
 
 import axios from 'axios'
 axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/'
@@ -19,6 +20,8 @@ Vue.prototype.$confirm = MessageBox.confirm
 
 Vue.use(ElementUI)
 Vue.config.productionTip = false
+
+Vue.component('tree-table',TreeTable)
 
 new Vue({
   router,
