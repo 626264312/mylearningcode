@@ -70,6 +70,7 @@
         </el-form-item>
         <el-form-item label="父级分类：">
           <el-cascader
+          :show-all-levels="false"
             v-model="selectedKeys"
             :options="parentCateList"
             :props="cascaderProps"
