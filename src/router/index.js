@@ -35,7 +35,8 @@ VueRouter.prototype.push = function push(location) {
       {path : '/goods',component: () => import('@/components/Goods/List.vue')},
       {path : '/goods/add',component: () => import('@/components/Goods/Add.vue')},
       {path : '/orders',component: () => import('@/components/Order/Order.vue')},
-      {path : '/reports',component: () => import('@/components/Report/Report.vue')}
+      {path : '/reports',component: () => import('@/components/Report/Report.vue')},
+
     ]
   }
 ]
