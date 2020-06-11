@@ -33,7 +33,8 @@ VueRouter.prototype.push = function push(location) {
       {path : '/categories',component: () => import('@/components/Goods/Cate.vue')},
       {path : '/params',component: () => import('@/components/Goods/Params.vue')},
       {path : '/goods',component: () => import('@/components/Goods/List.vue')},
-      {path : '/goods/add',component: () => import('@/components/Goods/Add.vue')}
+      {path : '/goods/add',component: () => import('@/components/Goods/Add.vue')},
+      {path : '/orders',component: () => import('@/components/Order/Order.vue')}
     ]
   }
 ]
